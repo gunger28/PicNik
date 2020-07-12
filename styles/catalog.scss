@@ -1,10 +1,32 @@
 $main_font: "Open Sans";
-$font_name: 5.0em;
-$font_title_categ: 2.52em;
-$font_desc: 1.3em;
-$font_menu: 1.1em ;
-$font_categ: 2.0em ;
-$font_form: 1.3em ;
+
+$font_name: 4.6em;
+$font_title_categ: 1.5em;
+//$font_desc: calc(18px + 16 * (100vw / 1280));
+$font_desc: 1.15vw ;
+$font_menu: 0.7em ;
+$font_categ: 1.6em ;
+$font_form: 0.9em ;
+
+
+
+
+    
+
+
+    // @media (min-width: 2080px) {
+
+    // //     $font_name: 5.0em;
+    // //     $font_title_categ: 2.52em;
+    //      $font_desc: 1.3em;
+    // //     $font_menu: 1.1em ;
+    // //     $font_categ: 2.0em ;
+    // //     $font_form: 1.3em ;
+        
+    
+    
+    
+    //      }
 
 
 body{
