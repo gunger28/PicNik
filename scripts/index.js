@@ -7,6 +7,8 @@ var div_card2 = document.getElementById("2");
 var div_card3 = document.getElementById("3");
 var div_card4 = document.getElementById("4");
 var divs_cards = document.querySelectorAll(".card");
+var menu_elements = document.querySelectorAll(".element");
+
 
 var div_card_text1 = document.getElementById("text1");
 var div_card_text2 = document.getElementById("text2");
@@ -18,6 +20,7 @@ var activeCategory = "vorota";
 function changePage(categ) {
     if (categ === "zabor") {
         document.location.href = "../pages/catalog.html";
+      
     }
 
     if (categ === "vorota") {
@@ -27,7 +30,23 @@ function changePage(categ) {
     if (categ === "kalitka") {
         document.location.href = "../pages/catalog.html";
     }
+
+    if( categ === "contacts"){
+        document.location.href = "../pages/contacts.html";
+
+    }
+    if( categ === "gallery"){
+
+        document.location.href = "../pages/gallery.html";
+    }
+    if( categ === "catalog"){
+        document.location.href = "../pages/catalog.html";
+
+    }
 };
+
+
+
 
 function changeCategory(categ) {
 
@@ -86,7 +105,18 @@ window.onload = function () {
     div_zabor.style.backgroundColor = "rgb(255, 38, 0)";
     changeCategory("zabor");
 
+   
 
+    menu_elements.forEach(elem => {
+        console.log("change page");
+elem.addEventListener("click", function(){
+    console.log(elem.id);
+changePage(elem.id);
+
+});
+
+
+    });
 
     divs_cards.forEach(card => {
 

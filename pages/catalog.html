@@ -17,21 +17,21 @@
 <body>
 
 <div class="menu">
-<div class="logo_element">
+<div class="element" id="go_main">
 logo
 </div>
 
-<div class="element">
+<div class="element" id="contacts">
 контакты
 </div>
 
 
-<div class="element">
+<div class="element" id="gallery">
 галлерея
 </div>
 
 
-<div class="element">
+<div class="element" id="catalog">
 заказать
 </div>
 
@@ -44,9 +44,9 @@ logo
 
         <div class="categorys">
 
-<p style="background-color: rgb(255, 60, 0); margin-left: 43%;" >Заборы</p>
-<p>Ворота</p>
-<p>Калитки</p>
+<p style="background-color: rgb(255, 60, 0);" id="1" >Заборы</p>
+<p id="2">Ворота</p>
+<p id="3">Калитки</p>
 
         </div>
 
@@ -54,7 +54,7 @@ logo
 
             <div class="top">
 
-                <div class="photo" style="background-image: url(../assets/index/zabor1.png);">
+                <div class="photo" id="photo" style="background-image: url(../assets/index/zabor1.png);">
 
 
 
@@ -63,17 +63,17 @@ logo
                 </div>
 
                 <div class="buy">
+<form action="../php/mail.php" method="POST">
+                    <input name="user_name" type="text" placeholder="Имя">
+                    <input name="phone_number" type="text" placeholder="Тел.">
+<button  type="submit">Заказать</button>
 
-                    <input type="text" placeholder="Имя">
-                    <input type="text" placeholder="Тел.">
-<button>Заказать</button>
-
-
+</form>
                 </div>
 
             </div>
 
-            <div class="description">
+            <div class="description" id="desc">
 
                 Это забор охуенный конечно классный. Лучше некуда прям вот вообще суперский пизже заборов вы не видели именно это зхаюбор супер крут.
                 куцкуцкцукцук больше строк описвания я хочу уже спатиь, но надо закончить дизайнить это говно полюбомы дада енемного тескта и тдтдтд.
@@ -103,19 +103,19 @@ logo
 
             <div class="line">
 
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
 
@@ -137,19 +137,19 @@ logo
 
             <div class="line">
 
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
 
@@ -171,19 +171,19 @@ logo
 
             <div class="line">
 
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
 
@@ -205,19 +205,19 @@ logo
 
             <div class="line">
 
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
-                <div class="card">
+                <div class="card" data-desc="errewrwerew">
 
                 </div>
 
@@ -242,7 +242,7 @@ logo
 
 <!-- SKRIPTS -->
   
-    <script type="text/javascript" src="./scripts/index.js"></script>
+    <script type="text/javascript" src="../scripts/catalog.js"></script>
    
 </body>
 
