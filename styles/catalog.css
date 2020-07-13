@@ -80,7 +80,7 @@ body {
   text-align: center;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
-  margin-left: 43%;
+  margin-left: 53%;
   position: static;
   background-color: #222222;
   width: 60%;
@@ -124,6 +124,8 @@ body {
   background-color: #afafaf;
   width: 60%;
   height: 100%;
+  -webkit-transition: ease-in .5s;
+  transition: ease-in .5s;
 }
 
 .buy_panel .buy_block .top .buy {
@@ -177,6 +179,8 @@ body {
   padding-right: 10px;
   text-indent: 20px;
   color: white;
+  -webkit-transition: ease-in .5s;
+  transition: ease-in .5s;
 }
 
 .catalog_panel {
@@ -220,6 +224,9 @@ body {
 }
 
 .catalog_panel .block .line {
+  clip: rect();
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,7 +245,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   background-color: #2a2a2a;
   border-radius: 20px;
   width: 18%;

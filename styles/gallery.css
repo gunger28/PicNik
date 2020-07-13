@@ -1,0 +1,103 @@
+body {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/index/main.png");
+}
+
+.menu {
+  top: 0;
+  font-family: "Open Sans";
+  position: fixed;
+  left: 0;
+  display: inline-block;
+  width: 80px;
+  background-color: #111111;
+  height: 100%;
+  -webkit-box-shadow: 4px 4px 8px black;
+          box-shadow: 4px 4px 8px black;
+}
+
+.menu .logo_element {
+  width: 100%;
+  height: 75px;
+}
+
+.menu .element {
+  line-height: 250%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  color: white;
+  font-size: calc(0.45em + 1vmin);
+  font-family: "Open Sans";
+  width: 100%;
+  height: 75px;
+  margin-bottom: 2px;
+  background-color: #1d1d1d;
+  -webkit-transition: ease-out .4s;
+  transition: ease-out .4s;
+}
+
+.menu .element:hover {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 130%;
+  background-color: #301e75;
+}
+
+.gal_pane {
+  position: fixed;
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: 2%;
+  background-color: rgba(37, 37, 37, 0);
+  width: 80%;
+  height: 92%;
+}
+
+.gal_pane .title {
+  color: white;
+  position: relative;
+  font-size: calc(4.8em - 1vmin);
+  font-family: "Open Sans";
+  background-color: rgba(211, 25, 25, 0);
+  width: 100%;
+  height: 10%;
+}
+
+.gal_pane .imgs_pane {
+  position: relative;
+  display: inline-block;
+  font-size: calc(4.8em - 1vmin);
+  font-family: "Open Sans";
+  background-color: #222222;
+  width: 100%;
+  height: 90%;
+}
+
+.gal_pane .imgs_pane .line {
+  margin-top: 1%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1%;
+  background-color: rgba(211, 25, 202, 0);
+  width: 100%;
+  height: 31%;
+}
+
+.gal_pane .imgs_pane .line .photo {
+  border-radius: 20px;
+  position: relative;
+  margin: auto auto;
+  background-color: #2c2c2c;
+  width: 23%;
+  height: 95%;
+}
+/*# sourceMappingURL=gallery.css.map */

@@ -42,29 +42,69 @@ function set_datas(categ) {
     
     var swich = 0;
 
+    anim_change_cards_category();
+    setTimeout(() => {
 lines_cards.forEach(line => {
 
-  
+    
+        for (var i = 1; i < 10; i++) {
+            //  console.log(line.childNodes[i]);
+            
+              line.childNodes[i].style.backgroundImage = "url(" + dirs[swich] + categ + numeric_PNG[i] + ".png)"
+     
+              i++;
+            
+          }
+   
 
-    for (var i = 1; i < 10; i++) {
-      //  console.log(line.childNodes[i]);
-        line.childNodes[i].style.backgroundImage = "url(" + dirs[swich] + categ + numeric_PNG[i] + ".png)"
-
-        i++;
-    }
+    
  
     
     swich++;
     
 });
-
+}, 600);
 }
 
 function set_product(prod){
-console.log(prod.dataset);
-photo.style.backgroundImage = prod.style.backgroundImage;
-desc.textContent = prod.dataset.desc;
 
+
+photo.style.opacity = "0";
+  desc.style.opacity = "0";
+  
+  setTimeout(() => {
+
+    photo.style.backgroundImage = prod.style.backgroundImage;
+    desc.textContent = prod.dataset.desc;
+
+ 
+  }, 500);
+
+  setTimeout(() => {
+
+
+    photo.style.opacity = "1";
+    desc.style.opacity = "1";
+  }, 800);
+
+}
+
+function anim_change_cards_category(){
+
+    
+
+    cards.forEach(card => {
+      //  card.style.top = "-100%";
+card.style.transform = "translateY(-120%)";
+        
+setTimeout(() => {
+    card.style.transform = "translateY(0%)";
+    card.style.transform = "";
+}, 1200);
+
+    });
+
+    
 
 }
 

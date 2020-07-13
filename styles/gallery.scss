@@ -1,0 +1,140 @@
+$main_font: "Open Sans";
+
+$font_name: 4.6em;
+$font_title_categ: calc(4.8em - 1vmin) ;
+//$font_desc: calc(18px + 16 * (100vw / 1280));
+$font_desc: calc(2.0em - 1vmin) ;
+$font_menu: calc(0.45em + 1vmin) ;
+$font_categ: 1.6em ;
+$font_form: 0.9em ;
+
+
+
+
+    
+
+
+
+
+
+body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+height: 100%;
+width: 100%;
+//background-color: rgb(42, 91, 165);
+    //background: linear-gradient(90deg, rgba(25,0,0,0) 0%, rgb(34, 34, 34) 0%, rgb(15, 15, 15) 100%);
+
+    background-image: url("../assets/index/main.png");
+//display: inline-block;
+
+}
+
+.menu{
+  top: 0;
+font-family: $main_font;
+position: fixed;
+left: 0;
+display: inline-block;
+width: 80px;
+background-color: rgb(17, 17, 17);
+height: 100%;
+box-shadow: 4px 4px 8px black;
+
+.logo_element{
+width: 100%;
+    height: 75px;
+
+
+
+}
+
+.element{
+    line-height: 250%;
+    user-select: none;
+    text-align: center;
+    color: white;
+    font-size: $font_menu;
+    font-family: $main_font;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 2px;
+    background-color: rgb(29, 29, 29);
+
+    transition: ease-out .4s;
+    &:hover{
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        width: 130%;
+        background-color: rgb(48, 30, 117);
+
+    }
+
+}
+
+}
+
+.gal_pane{
+    position: fixed;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 2%;
+    background-color: rgba(37, 37, 37, 0);
+width: 80%;
+height: 92%;
+
+    .title{
+        color: white;
+        position: relative;
+      font-size: $font_title_categ;
+      font-family: $main_font;
+        background-color: rgba(211, 25, 25, 0);
+    width: 100%;
+    height: 10%;
+
+
+    }
+
+    .imgs_pane{
+        position: relative;
+        display: inline-block;
+        font-size: $font_title_categ;
+        font-family: $main_font;
+          background-color: rgb(34, 34, 34);
+      width: 100%;
+      height: 90%;
+  
+
+      .line{
+        margin-top: 1%;
+        position: relative;
+        display: flex;
+       margin-bottom: 1%;
+          background-color: rgba(211, 25, 202, 0);
+      width: 100%;
+      height: 31%;
+     
+
+        .photo{
+            border-radius: 20px;
+            position: relative;
+    margin: auto auto;
+              background-color: rgb(44, 44, 44);
+          width: 23%;
+          height: 95%;
+      
+
+        }
+
+      }
+
+       
+
+
+
+    }
+
+
+
+}

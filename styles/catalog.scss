@@ -93,6 +93,7 @@ margin-top: 60px;
     
     background-color: rgba(133, 40, 40, 0);
 
+    
 
     width: 30%;
     height: 100%;
@@ -100,6 +101,7 @@ margin-top: 60px;
   //  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.55);
 
     p{
+      
         margin-top: 10%;
         text-transform: uppercase;
         color: white;
@@ -108,7 +110,7 @@ margin-top: 60px;
 text-align: center;
 border-top-left-radius: 40px;
 border-bottom-left-radius: 40px;
-margin-left: 43%;
+margin-left: 53%;
         position: static;
        
         background-color: rgb(34, 34, 34);
@@ -164,7 +166,7 @@ border-top-left-radius: 20px;
     width: 60%;
     height: 100%;
     
-  
+  transition: ease-in .5s;
 
 
 }
@@ -237,6 +239,8 @@ margin-left: 40%;
 text-indent: 20px;
 color: white;
 
+transition: ease-in .5s;
+
 }
 
 
@@ -299,7 +303,8 @@ margin-top: 10px;
         }
 
 .line{
-
+    clip: rect();
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
     display: flex;
     position: relative;
     
@@ -318,7 +323,7 @@ margin-top: 10px;
     border: 2px solid rgb(255, 60, 0);
     margin: auto auto;
     display: flex;
-    position: relative;
+    position: sticky;
     
     background-color: rgb(42, 42, 42);
 
