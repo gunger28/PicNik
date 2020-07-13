@@ -1,0 +1,110 @@
+body {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(120deg, #222222 15%, #111111 100%);
+}
+
+.menu {
+  top: 0;
+  font-family: "Open Sans";
+  position: fixed;
+  left: 0;
+  display: inline-block;
+  width: 80px;
+  background-color: #242424;
+  height: 100%;
+  -webkit-box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.55);
+          box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.55);
+}
+
+.menu .logo_element {
+  width: 100%;
+  height: 75px;
+}
+
+.menu .element {
+  line-height: 250%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  color: white;
+  font-size: calc(0.45em + 1vmin);
+  font-family: "Open Sans";
+  width: 100%;
+  height: 80px;
+  margin-bottom: 2px;
+  background-color: #333333;
+  -webkit-transition: ease-out .4s;
+  transition: ease-out .4s;
+}
+
+.menu .element:hover {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 130%;
+  background-color: #301e75;
+}
+
+.cont_pane {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10%;
+  margin-top: 2%;
+  background-color: rgba(56, 56, 56, 0);
+  width: 80%;
+  height: 52%;
+}
+
+.cont_pane .map {
+  color: white;
+  position: relative;
+  font-size: calc(4.8em - 1vmin);
+  font-family: "Open Sans";
+  background-color: #1935d3;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 30px;
+  -webkit-box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.75);
+}
+
+.cont_pane .contacts {
+  position: relative;
+  display: inline-block;
+  font-size: calc(4.8em - 1vmin);
+  font-family: "Open Sans";
+  background-color: rgba(202, 20, 20, 0);
+  width: 25%;
+  height: 70%;
+}
+
+.cont_pane .contacts .plane {
+  margin-bottom: 4%;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 37%;
+  background-color: #14ca2c;
+  border-radius: 30px;
+  -webkit-box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.75);
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  font-size: 0.4em;
+}
+
+.map > ymaps {
+  border-radius: 30px;
+  overflow: hidden;
+}
+/*# sourceMappingURL=contacts.css.map */

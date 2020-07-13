@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
 
     <!-- <link rel="stylesheet" href="./styles/gallery.css?<?php echo time();?>" /> -->
-    <link rel="stylesheet" href="./styles/index.css?<?php echo time();?>" />
+    <link rel="stylesheet" href="../styles/contacts.css?<?php echo time();?>" />
     
  
     <title>kek</title>
@@ -17,31 +17,54 @@
 <body>
 
 <div class="menu">
-<div class="logo_element">
-logo
+    <div class="element" id="go_main">
+        logo
+        </div>
+        
+        <div class="element" id="contacts">
+        контакты
+        </div>
+        
+        
+        <div class="element" id="gallery">
+        галлерея
+        </div>
+        
+        
+        <div class="element" id="catalog">
+        заказать
+        </div>
+
+
 </div>
 
-<div class="element">
-контакты
+<div class="cont_pane">
+
+    <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add7bec3da526b75adb7862d4d0d6373e77e83d7d666a04c3cd97c5dcffce1a37&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+
+    </div>
+
+    <div class="contacts">
+
+        <div class="plane" style="background-color: rgb(255, 81, 0);"> 
+            Новосибирская область, г. Бердск, Переулок промышленный 2/1
+        </div>
+
+        <div class="plane" style="background-color: rgb(47, 47, 47);"> 
+            Тел. 8 (981) 345 90 50 <br> 
+            Тел. 8 (981) 345 90 50 
+            Gunger.K@yandex.ru
+        </div>
+
+    </div>
+
+
 </div>
-
-
-<div class="element">
-галлерея
-</div>
-
-
-<div class="element">
-заказать
-</div>
-
-</div>
-
-
 
 <!-- SKRIPTS -->
   
-    <script type="text/javascript" src="./scripts/index.js"></script>
+    <script type="text/javascript" src="../scripts/contacts.js"></script>
    
 </body>
 

@@ -13,24 +13,27 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+   
+    background: linear-gradient(120deg, rgb(31, 31, 31) 36%, rgba(6,6,6,1) 100%);
 
-    //background: linear-gradient(90deg, rgba(25,0,0,0) 0%, rgb(34, 34, 34) 0%, rgb(15, 15, 15) 100%);
 
-    background-image: url("../assets/index/main.png");
+
+ //   background-image: url("../assets/index/main.png");
 //display: inline-block;
 
 }
 
 .menu{
   
-font-family: $main_font;
-position: fixed;
-left: 0;
-display: inline-block;
-width: 80px;
-background-color: rgb(17, 17, 17);
-height: 100%;
-box-shadow: 4px 4px 8px black;
+    top: 0;
+    font-family: $main_font;
+    position: fixed;
+    left: 0;
+    display: inline-block;
+    width: 80px;
+    background-color: rgb(36, 36, 36);
+    height: 100%;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.55);
 
 .logo_element{
 width: 100%;
@@ -45,12 +48,12 @@ width: 100%;
     user-select: none;
     text-align: center;
     color: white;
+    height: 80px;
     font-size: $font_menu;
     font-family: $main_font;
     width: 100%;
-    height: 75px;
     margin-bottom: 2px;
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(51, 51, 51);
 
     transition: ease-out .4s;
     &:hover{
