@@ -18,6 +18,7 @@ $font_form: 0.9em ;
 
 
 body{
+   
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -264,7 +265,7 @@ margin-top: 10px;
     width: 80%;
     height: 64%;
     
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.55);
+//    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.55);
 
 
     .block{
@@ -319,7 +320,13 @@ margin-top: 10px;
 
 
 .card{
-    background-size: 100% 100%;
+
+    background-position: center;
+   
+        background-size: contain;
+        background-repeat: no-repeat;
+
+  
     border: 2px solid rgb(255, 60, 0);
     margin: auto auto;
     display: flex;

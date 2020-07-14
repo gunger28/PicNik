@@ -6,18 +6,29 @@ $phone = $_POST['phone_number'];
 
 $to = 'Gunger.K@yandex.ru';
 $subject = 'PICNIK';
+$img = "<img alt=\"\" width=\" 500 \" height=\" 300 \" src=\"http://picnik/assets/catalog/\">";
 
-$message = "Новая заявка!\r\n"
-.'Имя: '.$name."\r\n\n"
-."Телефон: "."$phone"."\r\n\n"
-."Категория: "."Заборы"."\r\n\n";
+$message = 
+"<div style=\" text-align: center;\">"
+."<h1>" ."Новая заявка!" ."</h1>" ."<br>"
+."<strong>" ."Категория: "."<strong>" ."Заборы"."<br>"
+.$img ."<br>"."<br>"
+."<strong>" ."Имя: " ."<strong>" .$name."<br>"."<br>"
+."<strong>"."Телефон: "."<strong>" ."$phone"."<br>"."</div>";
 
-mail('Gunger.K@yandex.ru', $subject, $message, 'From: gungeranton@yandex.ru');
 
+//mail('Gunger.K@yandex.ru', $subject, $message, 'From: gungeranton@yandex.ru');
+
+$from = "PICNIK";
+$headers  = "From: $from\r\nContent-type: text/html; http-equiv=\"Content-Type\" charset=utf-8\r\n";
+
+    // try to post
+    mail($to, $subject, $message, $headers);
+    
+    
 $redirect = isset($_SERVER['HTTP_REFERER'])? $_SERVER['HTTP_REFERER']:'redirect-form.html';
 header("Location: $redirect");
 exit();
-
 
 
     // // form fields

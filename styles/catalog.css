@@ -191,8 +191,6 @@ body {
   margin-top: 10px;
   width: 80%;
   height: 64%;
-  -webkit-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.55);
-          box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.55);
 }
 
 .catalog_panel .block {
@@ -239,7 +237,9 @@ body {
 }
 
 .catalog_panel .block .line .card {
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   border: 2px solid #ff3c00;
   margin: auto auto;
   display: -webkit-box;

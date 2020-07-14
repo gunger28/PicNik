@@ -5,6 +5,9 @@ var cards = document.querySelectorAll(".card");
 
 var photo = document.getElementById("photo");
 var desc = document.getElementById("desc");
+var title = document.getElementById("T3");
+var last_block = document.getElementById("last_block");
+
 
 var cat1 = document.getElementById("1");
 var cat2 = document.getElementById("2");
@@ -41,6 +44,26 @@ function changePage(categ) {
 function set_datas(categ) {
     
     var swich = 0;
+
+    last_block.style.opacity = "1";
+    if(categ === "3"){
+
+        title.textContent = "Из профнастила"
+        last_block.style.opacity = "0";
+
+  
+       
+
+    }else{
+
+        title.textContent = "Декоративные"
+      
+    }
+
+    if(categ === "2"){
+
+        title.textContent = "Отдвижные"
+    }
 
     anim_change_cards_category();
     setTimeout(() => {
@@ -113,7 +136,7 @@ setTimeout(() => {
 window.onload = function () {
 
     
-   set_datas("1");
+   set_datas("3");
 
 
 cards.forEach(card => {
@@ -132,6 +155,7 @@ cards.forEach(card => {
   cat1.addEventListener("click", function(){
     set_datas(cat1.id);
 
+  
 });
 
 cat2.addEventListener("click", function(){
@@ -141,7 +165,7 @@ cat2.addEventListener("click", function(){
 
 cat3.addEventListener("click", function(){
     set_datas(cat3.id);
-
+    
 });
     
     menu_elements.forEach(elem => {
