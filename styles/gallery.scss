@@ -42,25 +42,22 @@ background-color: rgb(17, 17, 17);
 height: 100%;
 box-shadow: 4px 4px 8px black;
 
-.logo_element{
-width: 100%;
-    height: 75px;
-
-
-
-}
 
 .element{
-    line-height: 250%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    line-height: 15px;
     user-select: none;
     text-align: center;
-    color: white;
+    color: rgba(255, 255, 255, 0);
     font-size: $font_menu;
     font-family: $main_font;
     width: 100%;
-    height: 75px;
-    margin-bottom: 2px;
-    background-color: rgb(29, 29, 29);
+    height: 80px;
+    margin-bottom: 3px;
+    background-color: rgb(54, 54, 54);
 
     transition: ease-out .4s;
     &:hover{
@@ -68,7 +65,7 @@ width: 100%;
         border-top-right-radius: 15px;
         width: 130%;
         background-color: rgb(48, 30, 117);
-
+        color: rgba(255, 255, 255, 1);
     }
 
 }

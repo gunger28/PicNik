@@ -112,18 +112,26 @@ photo.style.opacity = "0";
 
 }
 
+function anim_disable_categ(target){
+
+    target.style.backgroundColor = "rgb(34, 34, 34)";
+    target.style.marginLeft = "53%";
+
+
+}
+
 function anim_change_cards_category(){
 
     
 
     cards.forEach(card => {
       //  card.style.top = "-100%";
-card.style.transform = "translateY(-120%)";
+card.style.transform = "translateY(-115%)";
         
 setTimeout(() => {
     card.style.transform = "translateY(0%)";
     card.style.transform = "";
-}, 1200);
+}, 700);
 
     });
 
@@ -131,6 +139,31 @@ setTimeout(() => {
 
 }
 
+function scroll_to_buy(){
+
+    var to_buy_panel = document.getElementById("trigger");
+
+    to_buy_panel.scrollIntoView({ 
+
+        behavior: "smooth",
+        block: "start",
+        inline:"nearest"
+
+    });
+}
+
+function scroll_to_catalog(){
+
+    var catalog = document.getElementById("T1");
+
+    catalog.scrollIntoView({ 
+
+        behavior: "smooth",
+        block: "start",
+        inline:"nearest"
+
+    });
+}
 
 
 window.onload = function () {
@@ -145,6 +178,7 @@ cards.forEach(card => {
 
     card.addEventListener("click", function(){
       //  console.log(event.target.backgroundImage);
+      scroll_to_buy();
         set_product(event.target);
     
     });
@@ -152,19 +186,40 @@ cards.forEach(card => {
 });
 
 
+
   cat1.addEventListener("click", function(){
     set_datas(cat1.id);
+    scroll_to_catalog();
+
+cat1.style.backgroundColor = "rgb(255, 60, 0)";
+cat1.style.marginLeft = "43%";
 
   
+anim_disable_categ(cat2);
+anim_disable_categ(cat3);
 });
 
 cat2.addEventListener("click", function(){
     set_datas(cat2.id);
+    scroll_to_catalog();
+
+    cat2.style.backgroundColor = "rgb(255, 60, 0)";
+cat2.style.marginLeft = "43%";
+  
+anim_disable_categ(cat1);
+anim_disable_categ(cat3);
 
 });
 
 cat3.addEventListener("click", function(){
     set_datas(cat3.id);
+    scroll_to_catalog();
+
+    cat3.style.backgroundColor = "rgb(255, 60, 0)";
+cat3.style.marginLeft = "43%";
+  
+anim_disable_categ(cat1);
+anim_disable_categ(cat2);
     
 });
     
