@@ -1,3 +1,5 @@
+
+
 var menu_elements = document.querySelectorAll(".element");
 var lines_cards = document.querySelectorAll(".line");
 var categorys = document.querySelectorAll(".categorys");
@@ -165,11 +167,27 @@ function scroll_to_catalog(){
     });
 }
 
+console.log(choosed_category);
+
 
 window.onload = function () {
 
-    
-   set_datas("3");
+    if(choosed_category === "zabor"){
+
+        set_datas("1");
+
+    }
+    if(choosed_category === "vorota"){
+
+        set_datas("2");
+
+    }
+    if(choosed_category === "kalitka"){
+
+        set_datas("3");
+
+    }
+   
 
 
 cards.forEach(card => {

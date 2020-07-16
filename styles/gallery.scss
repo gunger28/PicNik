@@ -72,6 +72,29 @@ box-shadow: 4px 4px 8px black;
 
 }
 
+
+.grey_window{
+ top: 0;
+ left: 0;
+position: fixed;
+display: flex;
+width: 100%;
+height: 100%;
+
+background-color: rgba(0, 0, 0, 0.707);
+
+transition: linear .4s;
+  .img{
+    margin: auto auto;
+width: 60%;
+height: 70%;
+position: relative;
+background-color: rgba(37, 37, 37, 0.89);
+
+  }
+
+}
+
 .gal_pane{
     position: fixed;
     display: inline-block;
@@ -114,6 +137,10 @@ height: 92%;
      
 
         .photo{
+
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
             border-radius: 20px;
             position: relative;
     margin: auto auto;
@@ -121,7 +148,13 @@ height: 92%;
           width: 23%;
           height: 95%;
       
+transition: linear .4s;
 
+          &:hover{
+
+transform: scale(0.95);
+
+          }
         }
 
       }

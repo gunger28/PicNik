@@ -105,6 +105,7 @@ window.onload = function () {
     div_zabor.style.backgroundColor = "rgb(255, 38, 0)";
     changeCategory("zabor");
 
+   // console.log(choosed_category);
    
 
     menu_elements.forEach(elem => {
@@ -119,6 +120,8 @@ changePage(elem.id);
     });
 
     divs_cards.forEach(card => {
+
+
 
         card.addEventListener("mouseover", function () {
             card.childNodes[1].style.height = "50%";
@@ -140,7 +143,7 @@ changePage(elem.id);
 
     });
 
-
+    choosed_category = "vorota";
 
     div_kalitka.addEventListener("click", function () {
 
@@ -149,6 +152,7 @@ changePage(elem.id);
         div_zabor.style.backgroundColor = "rgb(19, 19, 19)";
         changeCategory("kalitka");
 
+        choosed_category = "kalitka";
 
     });
 
@@ -158,8 +162,7 @@ changePage(elem.id);
         div_zabor.style.backgroundColor = "rgb(255, 38, 0)";
         changeCategory("zabor");
 
-
-
+       choosed_category = "zabor";
     });
 
 
@@ -170,6 +173,7 @@ changePage(elem.id);
 
         changeCategory("vorota");
 
+        choosed_category = "vorota";
 
     });
 
