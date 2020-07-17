@@ -91,6 +91,18 @@ body {
   height: 10%;
 }
 
+@media all and (min-width: 992px) {
+  .gal_pane .title {
+    font-size: calc(100vw / 50);
+  }
+}
+
+@media all and (min-width: 500px) {
+  .gal_pane .title {
+    font-size: calc(100vw * 0.035);
+  }
+}
+
 .gal_pane .imgs_pane {
   position: relative;
   display: inline-block;

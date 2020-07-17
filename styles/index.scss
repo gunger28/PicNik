@@ -136,7 +136,16 @@ background-size: contain;
     font-family: $main_font;
             font-size: $font_desc_company;
 
-
+            @media all and (min-width: 992px){
+    
+                font-size: calc(100vw / 50);
+                }
+                
+                @media all and (min-width: 500px){
+                    
+                font-size: calc(100vw * 0.0119);
+                }
+          
         }
     }
  }
@@ -184,6 +193,16 @@ font-family: $main_font;
 font-size: $font_menu;
 color: white;
 
+@media all and (min-width: 992px){
+    
+    font-size: calc(100vw / 50);
+    }
+    
+    @media all and (min-width: 500px){
+        
+    font-size: calc(100vw * 0.013);
+    }
+
             }
 
         }
@@ -221,6 +240,15 @@ width: 85%;
 box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.92);
             border-radius: 15px;
 
+            @media all and (min-width: 992px){
+    
+                font-size: calc(100vw / 50);
+                }
+                
+                @media all and (min-width: 500px){
+                    
+                font-size: calc(100vw * 0.013);
+                }
            }
 
            textarea{
@@ -241,6 +269,16 @@ height: 38%;
 width: 85%;
 box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.92);
 border-radius: 20px;
+
+@media all and (min-width: 992px){
+    
+    font-size: calc(100vw / 50);
+    }
+    
+    @media all and (min-width: 500px){
+        
+    font-size: calc(100vw * 0.013);
+    }
            }
 
            
@@ -260,6 +298,17 @@ border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.22);
         background-color: #ff653e;
 transition: linear .5s;
+
+@media all and (min-width: 992px){
+    
+    font-size: calc(100vw / 50);
+    }
+    
+    @media all and (min-width: 500px){
+        
+    font-size: calc(100vw * 0.013);
+    }
+
 &:hover{
     background-color: rgb(255, 30, 0);
 
@@ -291,6 +340,16 @@ display: inline-block;
 width: 100%;
 height: 10%;
 background-color: rgba(8, 14, 100, 0);
+
+@media all and (min-width: 992px){
+    
+ font-size: calc(100vw / 50);
+ }
+ 
+ @media all and (min-width: 500px){
+     
+ font-size: calc(100vw * 0.04);
+ }
 
     }
 
@@ -326,13 +385,32 @@ display: flex;
 
  margin: auto ;
                 width: 100%;
-                height: 60%;
+                height: 50%;
                 display: inline-block;
                 font-family: $main_font;
                 font-size: $font_categ;
                 color: white;
 
             }
+
+            @media all and (min-width: 992px){
+    
+                p{
+             font-size: calc(100vw / 50);
+             }
+                 
+             
+             
+             
+             }
+             
+             @media all and (min-width: 500px){
+                 
+                 p{
+             font-size: calc(100vw * 0.015);
+                     }
+                 
+             }
 
             transition: ease-in .4s;
             &:hover{
@@ -381,7 +459,7 @@ transition: ease-in-out .5s;
             position: absolute;
             border-bottom-right-radius: 55px;
             border-bottom-left-radius: 55px;
-            font-size: $font_desc;
+          //  font-size: $font_desc;
            // margin: auto auto;
             width: 100%;
             transition: ease-in-out .3s;
@@ -405,9 +483,31 @@ margin: auto ;
     height: 60%;
     display: inline-block;
     font-family: $main_font;
+    font-size: 28px;
    // font-size: $font_desc;
-    color: rgb(255, 102, 0);
+    color: rgb(255, 60, 0);
 
+    text-shadow: 0 0 10px #fd3402;
+    
+    
+}
+@media all and (min-width: 992px){
+    
+   p{
+font-size: calc(100vw / 50);
+}
+    
+
+
+
+}
+
+@media all and (min-width: 500px){
+    
+    p{
+font-size: calc(100vw * 0.02);
+        }
+    
 }
 
         }
@@ -431,3 +531,5 @@ margin: auto ;
 
 
 }
+
+

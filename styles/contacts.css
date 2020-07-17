@@ -107,6 +107,18 @@ body {
   font-size: 0.4em;
 }
 
+@media all and (min-width: 992px) {
+  .cont_pane .contacts .plane {
+    font-size: calc(100vw / 50);
+  }
+}
+
+@media all and (min-width: 500px) {
+  .cont_pane .contacts .plane {
+    font-size: calc(100vw * 0.015);
+  }
+}
+
 .map > ymaps {
   border-radius: 30px;
   overflow: hidden;

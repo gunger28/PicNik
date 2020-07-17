@@ -118,6 +118,18 @@ body {
   font-size: 1.32em;
 }
 
+@media all and (min-width: 992px) {
+  .panel .desc_panel .description .desc p {
+    font-size: calc(100vw / 50);
+  }
+}
+
+@media all and (min-width: 500px) {
+  .panel .desc_panel .description .desc p {
+    font-size: calc(100vw * 0.0119);
+  }
+}
+
 .panel .desc_panel .contacts {
   position: relative;
   display: -webkit-box;
@@ -158,6 +170,18 @@ body {
   color: white;
 }
 
+@media all and (min-width: 992px) {
+  .panel .desc_panel .contacts .offline p {
+    font-size: calc(100vw / 50);
+  }
+}
+
+@media all and (min-width: 500px) {
+  .panel .desc_panel .contacts .offline p {
+    font-size: calc(100vw * 0.013);
+  }
+}
+
 .panel .desc_panel .contacts .online {
   position: relative;
   display: table-cell;
@@ -187,6 +211,18 @@ body {
   border-radius: 15px;
 }
 
+@media all and (min-width: 992px) {
+  .panel .desc_panel .contacts .online input {
+    font-size: calc(100vw / 50);
+  }
+}
+
+@media all and (min-width: 500px) {
+  .panel .desc_panel .contacts .online input {
+    font-size: calc(100vw * 0.013);
+  }
+}
+
 .panel .desc_panel .contacts .online textarea {
   border: none;
   text-indent: 7px;
@@ -208,6 +244,18 @@ body {
   border-radius: 20px;
 }
 
+@media all and (min-width: 992px) {
+  .panel .desc_panel .contacts .online textarea {
+    font-size: calc(100vw / 50);
+  }
+}
+
+@media all and (min-width: 500px) {
+  .panel .desc_panel .contacts .online textarea {
+    font-size: calc(100vw * 0.013);
+  }
+}
+
 .panel .desc_panel .contacts .online button {
   position: relative;
   border: 2px solid #1f1f1f;
@@ -225,6 +273,18 @@ body {
   background-color: #ff653e;
   -webkit-transition: linear .5s;
   transition: linear .5s;
+}
+
+@media all and (min-width: 992px) {
+  .panel .desc_panel .contacts .online button {
+    font-size: calc(100vw / 50);
+  }
+}
+
+@media all and (min-width: 500px) {
+  .panel .desc_panel .contacts .online button {
+    font-size: calc(100vw * 0.013);
+  }
 }
 
 .panel .desc_panel .contacts .online button:hover {
@@ -248,6 +308,18 @@ body {
   width: 100%;
   height: 10%;
   background-color: rgba(8, 14, 100, 0);
+}
+
+@media all and (min-width: 992px) {
+  .panel .catalog_panel .name {
+    font-size: calc(100vw / 50);
+  }
+}
+
+@media all and (min-width: 500px) {
+  .panel .catalog_panel .name {
+    font-size: calc(100vw * 0.04);
+  }
 }
 
 .panel .catalog_panel .category {
@@ -289,11 +361,23 @@ body {
   vertical-align: middle;
   margin: auto;
   width: 100%;
-  height: 60%;
+  height: 50%;
   display: inline-block;
   font-family: "Open Sans";
   font-size: 1.5em;
   color: white;
+}
+
+@media all and (min-width: 992px) {
+  .panel .catalog_panel .category .block p {
+    font-size: calc(100vw / 50);
+  }
+}
+
+@media all and (min-width: 500px) {
+  .panel .catalog_panel .category .block p {
+    font-size: calc(100vw * 0.015);
+  }
 }
 
 .panel .catalog_panel .category .block:hover {
@@ -339,7 +423,6 @@ body {
   position: absolute;
   border-bottom-right-radius: 55px;
   border-bottom-left-radius: 55px;
-  font-size: 1.7em;
   width: 100%;
   -webkit-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
@@ -366,7 +449,21 @@ body {
   height: 60%;
   display: inline-block;
   font-family: "Open Sans";
-  color: #ff6600;
+  font-size: 28px;
+  color: #ff3c00;
+  text-shadow: 0 0 10px #fd3402;
+}
+
+@media all and (min-width: 992px) {
+  .panel .catalog_panel .panels_pane .line .card .desc p {
+    font-size: calc(100vw / 50);
+  }
+}
+
+@media all and (min-width: 500px) {
+  .panel .catalog_panel .panels_pane .line .card .desc p {
+    font-size: calc(100vw * 0.02);
+  }
 }
 
 .panel .catalog_panel .panels_pane .line .card:hover {
