@@ -126,7 +126,7 @@ body {
 
 @media all and (min-width: 500px) {
   .panel .desc_panel .description .desc p {
-    font-size: calc(100vw * 0.0119);
+    font-size: calc(100vw * 0.011);
   }
 }
 
@@ -190,7 +190,12 @@ body {
   width: 50%;
 }
 
-.panel .desc_panel .contacts .online input {
+.panel .desc_panel .contacts .online form {
+  width: 100%;
+  height: 100%;
+}
+
+.panel .desc_panel .contacts .online form input {
   border: none;
   text-indent: 7px;
   vertical-align: top;
@@ -212,18 +217,18 @@ body {
 }
 
 @media all and (min-width: 992px) {
-  .panel .desc_panel .contacts .online input {
+  .panel .desc_panel .contacts .online form input {
     font-size: calc(100vw / 50);
   }
 }
 
 @media all and (min-width: 500px) {
-  .panel .desc_panel .contacts .online input {
+  .panel .desc_panel .contacts .online form input {
     font-size: calc(100vw * 0.013);
   }
 }
 
-.panel .desc_panel .contacts .online textarea {
+.panel .desc_panel .contacts .online form textarea {
   border: none;
   text-indent: 7px;
   vertical-align: top;
@@ -245,18 +250,18 @@ body {
 }
 
 @media all and (min-width: 992px) {
-  .panel .desc_panel .contacts .online textarea {
+  .panel .desc_panel .contacts .online form textarea {
     font-size: calc(100vw / 50);
   }
 }
 
 @media all and (min-width: 500px) {
-  .panel .desc_panel .contacts .online textarea {
+  .panel .desc_panel .contacts .online form textarea {
     font-size: calc(100vw * 0.013);
   }
 }
 
-.panel .desc_panel .contacts .online button {
+.panel .desc_panel .contacts .online form button {
   position: relative;
   border: 2px solid #1f1f1f;
   margin-top: 2%;
@@ -276,18 +281,18 @@ body {
 }
 
 @media all and (min-width: 992px) {
-  .panel .desc_panel .contacts .online button {
+  .panel .desc_panel .contacts .online form button {
     font-size: calc(100vw / 50);
   }
 }
 
 @media all and (min-width: 500px) {
-  .panel .desc_panel .contacts .online button {
+  .panel .desc_panel .contacts .online form button {
     font-size: calc(100vw * 0.013);
   }
 }
 
-.panel .desc_panel .contacts .online button:hover {
+.panel .desc_panel .contacts .online form button:hover {
   background-color: #ff1e00;
 }
 

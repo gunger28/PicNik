@@ -63,14 +63,15 @@
 </div>
 
 <div class="online">
-    <input type="Тел." placeholder="Имя">
-<input type="Тел." placeholder="Тел.">
-<textarea placeholder="Сообщение" name="mes" id="mes" cols="30" rows="10"></textarea>
+    <form  action="./php/main_mail.php" method="POST">
+    <input name="name" type="Тел." placeholder="Имя">
+<input name="phone_number" type="Тел." placeholder="Тел.">
+<textarea  placeholder="Сообщение" name="message" id="mes" cols="30" rows="10"></textarea>
 
-<button>
+<button type="submit">
     Отправить    
     </button>
-
+</form>
 </div>
 
 </div>

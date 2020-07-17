@@ -85,11 +85,14 @@ background-color: rgba(0, 0, 0, 0.707);
 
 transition: linear .4s;
   .img{
+    background-position: center;
+    background-repeat: no-repeat;
+    
     margin: auto auto;
-width: 60%;
-height: 70%;
+width: 70%;
+height: 80%;
 position: relative;
-background-color: rgba(37, 37, 37, 0.89);
+//background-color: rgba(37, 37, 37, 0.89);
 
   }
 
