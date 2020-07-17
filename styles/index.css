@@ -408,12 +408,13 @@ body {
 .panel .catalog_panel .panels_pane .line .card {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 94% 94%;
+  background-size: contain;
+  background-size: 95% 95%;
   border-radius: 55px;
   margin: auto auto;
   width: 45%;
   height: 90%;
-  background-color: rgba(31, 31, 31, 0.87);
+  background-color: #1f1f1f;
   -webkit-box-shadow: 4px 4px 17px black;
           box-shadow: 4px 4px 17px black;
   position: relative;

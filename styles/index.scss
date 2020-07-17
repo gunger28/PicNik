@@ -442,16 +442,17 @@ display: flex;
 display: flex;
 
             .card{
-                
+               //@at-root background: linear-gradient(0deg, rgb(207, 25, 25) 0%, rgba(14, 194, 134, 0.692) 100%);
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: 94% 94%;
+                background-size:contain;
+                background-size: 95% 95%;
                 border-radius: 55px;
                 margin: auto auto;
                 width: 45%;
                 height: 90%;
-              //  background-color: rgb(24, 24, 24);
-               background-color: rgba(31, 31, 31, 0.87);
+             background-color: rgb(31, 31, 31);
+             
         box-shadow: 4px 4px 17px black;
                 position: relative;
 display: inline-flex;
@@ -521,7 +522,6 @@ font-size: calc(100vw * 0.02);
             //background-color: rgb(44, 44, 44);
             box-shadow: 0px 0px 10px rgba(255, 94, 0, 1);
             background-size: 85% 85%;
-
 
         }
             }
